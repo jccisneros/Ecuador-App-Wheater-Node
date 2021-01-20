@@ -12,7 +12,7 @@ const getInfo = async (ciudad) => {
     }    
     return info;
   } catch (error) {
-    return `No se pudo determinar el clima de la ciudad de ${ciudad}`.red;
+    return `Don't get the weather of the city ${ciudad}`.red;
   }
 };
 
