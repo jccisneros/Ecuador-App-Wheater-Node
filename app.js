@@ -18,13 +18,12 @@ const getInfo = async (ciudad) => {
 
 getInfo(argv.adress)
   .then((response) => {
-    // if (response.name === undefined) {
-    //   console.error(
-    //     `La dirección ingresada no es valida \nIngrese una ciudad que pertenezca al país de Ecuador`
-    //       .red
-    //   );
-    //   return;
-    // }    
+    if (response.name === undefined) {
+      console.error(
+        `La dirección ingresada no es valida \nIngrese una ciudad que pertenezca al país de Ecuador`.red
+      );
+      return;
+    }    
     console.log(`============================\n`.green);
     console.log(`Ecuadorian Wheater App\n`.yellow);
     console.log(`${response.clima.name} City`.blue);
