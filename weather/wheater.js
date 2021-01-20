@@ -9,7 +9,7 @@ module.exports.getWheater = async (latitud, longitud) => {
       lat: `${latitud}`,
       lon: `${longitud}`,
       units: "metric",
-      appid: "ead1c712a7fb10a88d6475d2c424215c",      
+      appid: "APIKEY",      
     },
   };
 
