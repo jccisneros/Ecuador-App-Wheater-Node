@@ -7,7 +7,7 @@ module.exports.getLatLong = async (adress) => {
     url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
     params: { limit: "1", countryIds: "EC", namePrefix: `${adress}` },
     headers: {
-      "x-rapidapi-key": "a997bc0d72msh5ec86e9e7716781p177aa6jsn03690b2a46bf",
+      "x-rapidapi-key": "APIKEY",
       "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
     },
   };
